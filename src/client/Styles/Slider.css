@@ -1,0 +1,314 @@
+.slider_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider_info_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider_picture_box {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.slider_picture_box {
+    overflow-y: none; /* for horiz. scroll, otherwise overflow-y: scroll; */
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+}
+
+@media screen and (min-width: 800px) {
+    .slider_picture_box {
+        width: 180px;
+        height: 180px;
+    }
+    .slider_button {
+        position: absolute;
+        top: 20%;
+        position: absolute0;
+        width: 2.5%;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .slider_picture_box {
+        width: 180px;
+        height: 180px;
+    }
+    .slider_button {
+        position: absolute;
+        top: 25%;
+        position: absolute0;
+        width: 5%;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slider_picture_box {
+        width: 130px;
+        height: 130px;
+    }
+    .slider_button {
+        position: absolute;
+        top: 20%;
+        position: absolute0;
+        width: 4.5%;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .slider_picture_box {
+        width: 130px;
+        height: 130px;
+    }
+    .slider_button {
+        position: absolute;
+        top: 25%;
+        position: absolute0;
+        width: 5%;
+        cursor: pointer;
+    }
+}
+
+.slider_picture_box {
+    margin-top: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: 2px 2px 10px rgb(160, 160, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider_picture_box img {
+    width: 100%;
+}
+
+.slider_info_box > p {
+    margin-top: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.slider_prev_button {
+    left: -4%;
+}
+
+.slider_next_button {
+    right: -4%;
+    transform: rotate(180deg);
+}
+
+.slider_button img {
+    width: 100%;
+}
+
+.alice-carousel {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.alice-carousel__wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.alice-carousel__stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.alice-carousel__stage-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    line-height: 0;
+}
+.alice-carousel__stage-item * {
+    line-height: initial;
+}
+.alice-carousel__stage-item.__cloned {
+    opacity: 0;
+    visibility: hidden;
+}
+.alice-carousel__stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+    display: inline-block;
+    width: 50%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+.alice-carousel__prev-btn [data-area]::after,
+.alice-carousel__next-btn [data-area]::after {
+    content: attr(data-area);
+    position: relative;
+    text-transform: capitalize;
+}
+
+.alice-carousel__prev-btn {
+    text-align: right;
+}
+
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+    display: inline-block;
+    color: #465798;
+    cursor: pointer;
+}
+.alice-carousel__prev-btn-item:hover,
+.alice-carousel__next-btn-item:hover {
+    color: darkred;
+}
+.alice-carousel__prev-btn-item.__inactive,
+.alice-carousel__next-btn-item.__inactive {
+    opacity: 0.4;
+}
+
+.alice-carousel__play-btn {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.alice-carousel__play-btn:hover {
+    cursor: pointer;
+}
+.alice-carousel__play-btn-wrapper {
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.alice-carousel__play-btn-item {
+    cursor: pointer;
+    position: absolute;
+    background: transparent;
+    width: 32px;
+    height: 32px;
+    outline: none;
+    border: 0;
+}
+.alice-carousel__play-btn-item::before,
+.alice-carousel__play-btn-item::after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 8px 0 8px 15px;
+    border-left-color: #465798;
+    transition: all 0.3s linear;
+}
+.alice-carousel__play-btn-item::before {
+    height: 14px;
+    left: 5px;
+}
+.alice-carousel__play-btn-item::after {
+    left: 18px;
+    top: 7px;
+}
+.alice-carousel__play-btn-item.__pause::before,
+.alice-carousel__play-btn-item.__pause::after {
+    border-width: 0 0 0 10px;
+    height: 30px;
+}
+.alice-carousel__play-btn-item.__pause::after {
+    left: 18px;
+    top: 0;
+}
+
+.alice-carousel__dots {
+    margin: 30px 0 5px;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+.alice-carousel__dots-item {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #e0e4fb;
+}
+.alice-carousel__dots-item:not(:last-child) {
+    margin-right: 15px;
+}
+.alice-carousel__dots-item:hover,
+.alice-carousel__dots-item.__active {
+    background-color: #6e7ebc;
+}
+
+.alice-carousel__slide-info {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 5px 10px;
+    color: #465798;
+    border-radius: 5px;
+    background-color: rgba(224, 228, 251, 0.6);
+}
+.alice-carousel__slide-info-item {
+    line-height: 0;
+    vertical-align: middle;
+}
+
+.alice-carousel .animated {
+    animation-fill-mode: both;
+}
+
+.alice-carousel .animated-out {
+    z-index: 1;
+}
+
+.alice-carousel .fadeOut {
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

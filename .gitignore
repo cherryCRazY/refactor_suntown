@@ -1,0 +1,32 @@
+.env
+# dependencies
+node_modules
+.idea
+logs
+# testing
+coverage
+server.js
+dist
+# production
+build
+static/css
+static/bundle.js
+static/vendor.js
+static/media
+# react-loadable.json
+
+package-lock.json
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+src/client/services/
+src/routers/
+
+

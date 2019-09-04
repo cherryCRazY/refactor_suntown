@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+@media screen and (max-width: 420px) {
+    section {
+        width: 100vw;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        background: #85b728;
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .footer p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+    .footer {
+        background: #85b728;
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .footer p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 960px) {
+    .footer {
+        background: #85b728;
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .footer p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        margin-top: 50px;
+        background: #85b728;
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .footer p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

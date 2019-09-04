@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "Raleway-Regular"; /* Имя шрифта */
+    src: url("../fonts/Raleway-Regular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "Seravek";
+    src: url("../fonts/Seravek.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-SemiBold";
+    src: url("../fonts/Raleway-SemiBold.ttf");
+}
+
+.scroll_to_top {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.scroll_to_top img {
+    width: 75px;
+}
+
+.App {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+* {
+    font-family: "Raleway-Regular";
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    h4 {
+        font-size: 28px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .company_color {
+        color: #85b728;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+    h2 {
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .company_color {
+        color: #85b728;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 960px) {
+    h2 {
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 30px;
+        line-height: 28px;
+        font-weight: 300;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .company_color {
+        color: #85b728;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h2 {
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    h4 {
+        font-size: 25px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .company_color {
+        color: #85b728;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    h2 {
+        font-size: 35px;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    h4 {
+        font-size: 25px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .company_color {
+        color: #85b728;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+    h2 {
+        font-size: 35px;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    h4 {
+        font-size: 25px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .company_color {
+        color: #85b728;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    h4 {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .company_color {
+        color: #85b728;
+    }
+}
