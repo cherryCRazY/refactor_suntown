@@ -270,7 +270,7 @@ export function loadDataNewsView({ dispatch }, path) {
     const url = path.substring(lang ? 6 : 9);
 
     const promises = [
-        dispatch(getArticles()),
+        dispatch(getArticles(url)),
         dispatch(getArticleSeoByUrl(url))
     ];
 

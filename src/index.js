@@ -17,8 +17,6 @@ app.get("*", (req, res) => {
 
     const promises = matchRoutes(Routes, req.path)
         .map(({ route }) => {
-            console.log("route", route);
-            console.log("object", route.loadData);
             return route.loadData ? route.loadData(store, req.path) : null;
         })
         .map(promise => {
@@ -38,8 +36,7 @@ app.get("*", (req, res) => {
                 if (context.url) {
                     res.redirect(301, context.url);
                 }
-                console.log("content", content.url);
-                console.log("context", context.notFound);
+
                 if (context.notFound) {
                     res.status(404);
                 }

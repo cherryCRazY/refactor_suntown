@@ -52,7 +52,6 @@ class AboutUs extends Component {
 
     preSets() {
         let that = this;
-        console.log(window.innerWidth);
         d3.selectAll(".offer_preview_button svg").style("right", "-60px");
         d3.selectAll(".offer_preview_button")
             .on("mouseover", that.overButton)

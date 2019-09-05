@@ -1,15 +1,20 @@
 import Loadable from "react-loadable";
 import React from "react";
 
+//Styles
+import "./Styles/reset.css";
+import "./Styles/App.css";
+import "./Styles/style.css";
+
 //loadData
 import { loadDataMain } from "./components/Main";
 import { loadDataAboutUs } from "./pages/AboutUsPage";
 import { loadDataPortfolio } from "./pages/PortfolioPage";
 import { loadDataProducts } from "./pages/ProductsPage";
-import { loadDataNewsView } from "./pages/News/OneNewsPage";
 import { loadDataContacts } from "./pages/ContactsPage";
 
 import NewsPage from "./pages/News/NewsPage";
+import { loadDataNewsView } from "./pages/News/OneNewsPage";
 
 const loading = () => <div>Loading...</div>;
 

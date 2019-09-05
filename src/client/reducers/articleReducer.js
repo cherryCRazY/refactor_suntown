@@ -23,13 +23,11 @@ export const articleReducer = (state = initialState, action) => {
             };
 
         case types.GET_ARTICLES_REQUEST:
-            console.log("GET_ARTICLES_REQUEST");
             return {
                 doneSorting: false,
                 loadingArticle: true
             };
         case types.GET_ARTICLES_SUCCESS:
-            console.log("getArtickle_Succes");
             return {
                 loadedArticle: true,
                 articles: action.articles.length ? [...action.articles] : []
@@ -51,10 +49,6 @@ export const articleReducer = (state = initialState, action) => {
             };
 
         case types.GET_SELECTED_ARTICLE_BY_URL:
-            console.log("action", action);
-            console.log("state.articles");
-            console.log(state.articles);
-
             return {
                 ...state,
                 selectedArticleByUrl: state.articles.filter(

@@ -33,7 +33,6 @@ export default (req, store, context) => {
         bundle => bundle && bundle.file.endsWith(".js")
     );
 
-    console.log("store.getState()", store.getState());
     return `
     <!doctype html>
     <html lang="ru">

@@ -39,7 +39,6 @@ class Header extends Component {
             const firstPart = locAr.slice(0, 3);
             const secondPart = locAr.slice(4);
 
-            console.log(firstPart, secondPart);
 
             window.location.href = [...firstPart, ...secondPart].join("/");
         }

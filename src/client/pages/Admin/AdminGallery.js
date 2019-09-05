@@ -46,7 +46,6 @@ class AdminGallery extends Component {
   }
 
   componentWillReceiveProps(nextProps){
-    // console.log(nextProps)
     checkToken()
     .catch(err => {
       this.setState({ isAuthed: false })

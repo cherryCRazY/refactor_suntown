@@ -4,10 +4,6 @@ import React from "react";
 //Components
 import Main from "../components/Main";
 
-//Styles
-import "../Styles/reset.css";
-import "../Styles/App.css";
-import "../Styles/style.css";
 
 
 

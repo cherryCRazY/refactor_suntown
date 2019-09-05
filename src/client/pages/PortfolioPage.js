@@ -413,7 +413,7 @@ class Portfolio extends Component {
   getFullScreenVideo(e, that) {
     let poster = e.select('video').attr('poster');
     let url = e.select('source').attr('src');
-    console.log(url)
+
     that.setState({ fullScreenVideoUrl: url });
     that.setState({ videoPoster: poster });
     that.showVideo();
@@ -450,7 +450,7 @@ class Portfolio extends Component {
             showVideo={this.showVideo}
             visible={this.state.isFullScreenVideo ? 'none' : 'flex'}
           />
-          <section className='portfolio_slider_section'>
+          <section className='portfolio_slider_box'>
             <div className='container portfolio_slider_box'>
               <h2>{lang ? 'С нами работают' : 'З нами працюють'}</h2>
               {

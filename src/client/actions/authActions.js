@@ -8,7 +8,6 @@ export const authActions = {
 
 function login(userData) {
   return dispatch => {
-    console.log(userData)
     dispatch(request())
     authServices.login(userData)
       .then(data => {

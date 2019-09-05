@@ -234,7 +234,6 @@ class AdminPartners extends Component {
     for(let i in this.state.postRu){
       if(i !== 'admin_partners_description' && i !== 'admin_partners_videoName'){
         if(this.state.postRu[i].length < 1){
-          console.log(i)
           this.setState({errors: 'Ошибка: Заполните все поля' })
           return
         }

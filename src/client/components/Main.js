@@ -51,7 +51,6 @@ class Main extends Component {
 
         this.props.getSeoByUrl("main", lang).then(data => {
             try {
-                console.log("data", data);
                 logPageView(this.props.getMetaResult.result.title);
             } catch (e) {
                 console.log("err");
@@ -112,7 +111,6 @@ class Main extends Component {
     }
 
     render() {
-        console.log("this.props", this.props);
 
         const lang = !this.props.location.pathname.includes("/ua");
         let metaTags =

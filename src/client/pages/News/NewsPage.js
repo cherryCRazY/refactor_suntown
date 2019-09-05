@@ -244,7 +244,7 @@ class News extends Component {
                 <div className="news">
                     <ScrollToTop />
                     <section>
-                        <div className="container news_box">
+                        <div className={"container news_box"}>
                             <h2>{lang ? "Новости" : "Новини"}</h2>
                             <div className="news_preview_line">
                                 {!article.loadingArtcile &&

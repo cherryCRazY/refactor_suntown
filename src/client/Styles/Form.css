@@ -65,8 +65,8 @@
         position: relative;
         max-width: 90%;
         /* margin-left: 5%;
->>>>>>> form-animation
-        margin-right: 5%; */
+  >>>>>>> form-animation
+          margin-right: 5%; */
     }
 
     .form_box h2 {
@@ -414,7 +414,7 @@
 @media screen and (max-width: 800px) {
     .form_section {
         /* -webkit-filter: blur(5px);
-            filter: blur(5px); */
+              filter: blur(5px); */
     }
 
     .form_error_point {
@@ -475,7 +475,7 @@
         position: relative;
         max-width: 100%;
         /* margin-left: 5%;
-            margin-right: 5%; */
+              margin-right: 5%; */
     }
 
     .form_description {

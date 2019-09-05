@@ -10,7 +10,6 @@ let RichTextEditor;
 var DatetimeInput
 
 if (process.env.BROWSER) { 
-  console.log('process.env.BROWSER', process.env.BROWSER)
   RichTextEditor = require('react-rte').default;
   var {DatetimeInput}= require("react-datetime-inputs/dist/datetime-inputs")
 }

@@ -24,7 +24,7 @@ const getArticleSeoByUrl = url => dispatch => {
         dispatch({
             type: types.GET_ARTICLE_SEO_BY_URL,
             payload: result
-        }).then(res => console.log("res", res))
+        })
     );
 };
 

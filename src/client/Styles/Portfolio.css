@@ -58,7 +58,7 @@ video[poster]{
     }
     
     .portfolio_slider_box{
-        padding-top: 120px;
+        padding-top: 60px;
         width: 90%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -473,7 +473,7 @@ video[poster]{
         }
     
         .portfolio_slider_box{
-            padding-top: 120px;
+            padding-top: 60px;
             width: 90%;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -907,7 +907,7 @@ video[poster]{
         }
         
         .portfolio_slider_box{
-            padding-top: 120px;
+            padding-top: 60px;
             width: 90%;
             display: -webkit-box;
             display: -ms-flexbox;

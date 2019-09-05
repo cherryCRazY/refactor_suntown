@@ -34,13 +34,16 @@ function addArticle(article) {
     };
 }
 
-function getArticles() {
+function getArticles(url) {
     return dispatch => {
         dispatch(request());
 
         return userServices.getArticles().then(
             articles => {
                 dispatch(success(articles));
+                url
+                    ? dispatch({ url, type: "GET_SELECTED_ARTICLE_BY_URL" })
+                    : null;
             },
             error => {
                 dispatch(failure(error));
