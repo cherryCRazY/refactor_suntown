@@ -43,7 +43,7 @@ const options = {
 if (process.env.NODE_ENV === "production") {
     options.plugins.push(
         new webpack.optimize.UglifyJsPlugin({
-            // sourceMap: true,
+            sourceMap: true,
             minimize: true
         }),
         new CompressionPlugin({
