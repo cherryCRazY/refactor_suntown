@@ -5,9 +5,13 @@ import Routes from "./client/Routes";
 import renderer from "./helpers/renderer";
 import createStore from "./helpers/createStore";
 import Loadable from "react-loadable";
+import compression from "compression";
+
+const PORT = process.env.PORT || 4000;
 
 const app = express();
 
+app.use(compression());
 app.use(express.static("public"));
 app.use("/static", express.static("./static"));
 app.use("/product/", express.static("./static/media"));
@@ -52,7 +56,7 @@ app.get("*", (req, res) => {
 });
 
 Loadable.preloadAll().then(() => {
-    app.listen(3000, () => {
-        console.log("Listening on port 3000");
+    app.listen(PORT, () => {
+        console.log("Listening on port " + PORT);
     });
 });

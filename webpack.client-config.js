@@ -51,6 +51,6 @@ if (process.env.NODE_ENV === "production") {
         })
     );
 }
-options.plugins.push(new BundleAnalyzerPlugin());
+// options.plugins.push(new BundleAnalyzerPlugin());
 
 module.exports = merge(defaultOption, options);

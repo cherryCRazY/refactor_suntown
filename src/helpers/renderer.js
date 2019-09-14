@@ -32,7 +32,7 @@ export default (req, store, context) => {
     let scripts = bundles.filter(
         bundle => bundle && bundle.file.endsWith(".js")
     );
-
+      
     return `
     <!doctype html>
     <html lang="ru">
